@@ -1,5 +1,5 @@
 # UberCustomerCluster
-This project Clusters customers of a Uber using KMeans Algorithm.
+This project Clusters of customers of Uber using KMeans Algorithm.
 
 # Requirements
  - Python 3.6 or up
