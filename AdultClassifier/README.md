@@ -1,5 +1,5 @@
 # AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNearestNeighbour Algorithm.
+This project Classifies if a person is an Adult based on their Features using KNearestNeighbour Algorithm.
 
 # Requirements
  - Python 3.6 or up
