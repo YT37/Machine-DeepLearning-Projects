@@ -1,5 +1,5 @@
 # AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNN Algorithm..
+This project Classifies if a prson is an Adult based on their Features using KNN Algorithm.
 
 # Requirements
  - Python 3.6 or up
