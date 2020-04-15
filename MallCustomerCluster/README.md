@@ -1,5 +1,5 @@
 # MallCustomerCluster
-This project Clusters customers of a Mall using KMeans Algorithm.
+This project Clusters of customers of a Mall using KMeans Algorithm.
 
 # Requirements
  - Python 3.6 or up
