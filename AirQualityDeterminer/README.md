@@ -1,5 +1,5 @@
-# AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNearestNeighbour Algorithm.
+# AirQualityDeterminer
+This project Determines the Air Quality of a place using Random Forest Algorithm.
 
 # Requirements
  - Python 3.6 or up
@@ -15,9 +15,9 @@ This project Classifies if a prson is an Adult based on their Features using KNe
    ```
  - **Windows**
    ```
-   python AdultClassifier.py
+   python AirQualityDeterminer.py
    ```
  - **Mac or Linux**
    ```
-   python3 AdultClassifier.py
+   python3 AirQualityDeterminer.py
    ```

@@ -1,9 +1,10 @@
-# AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNearestNeighbour Algorithm.
+# MallCustomerCluster
+This project Clusters customers of a Mall using KMeans Algorithm.
 
 # Requirements
  - Python 3.6 or up
  - Pandas
+ - MatPlotLib
  - SciKitLearn
  
  # Instructions To Use
@@ -15,9 +16,9 @@ This project Classifies if a prson is an Adult based on their Features using KNe
    ```
  - **Windows**
    ```
-   python AdultClassifier.py
+   python MallCustomerCluster.py
    ```
  - **Mac or Linux**
    ```
-   python3 AdultClassifier.py
+   python3 MallCustomerCluster.py
    ```

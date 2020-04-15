@@ -1,10 +1,10 @@
-# AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNearestNeighbour Algorithm.
+# MarketBasketAssociation
+This project creates Association Rules for a market basket using Apriori Algorithm.
 
 # Requirements
  - Python 3.6 or up
  - Pandas
- - SciKitLearn
+ - Apriori
  
  # Instructions To Use
  - Make sure all files should be in the same folder before running.
@@ -15,9 +15,9 @@ This project Classifies if a prson is an Adult based on their Features using KNe
    ```
  - **Windows**
    ```
-   python AdultClassifier.py
+   python MarketBasketAssociation.py
    ```
  - **Mac or Linux**
    ```
-   python3 AdultClassifier.py
+   python3 MarketBasketAssociation.py
    ```

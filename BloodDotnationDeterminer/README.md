@@ -1,8 +1,9 @@
-# AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNearestNeighbour Algorithm.
+# BloodDonationDeterminer
+This project determines wheather a person will donate blood using Random Forest Algorithm.
 
 # Requirements
  - Python 3.6 or up
+ - NumPy
  - Pandas
  - SciKitLearn
  
@@ -15,9 +16,9 @@ This project Classifies if a prson is an Adult based on their Features using KNe
    ```
  - **Windows**
    ```
-   python AdultClassifier.py
+   python BloodDonationDeterminer.py
    ```
  - **Mac or Linux**
    ```
-   python3 AdultClassifier.py
+   python3 BloodDonationDeterminer.py
    ```
