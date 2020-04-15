@@ -1,5 +1,5 @@
 # MachineLearning-Projects
- - These are Projects of different fields of Machine Learning
+ - These are Projects of different fields of Machine Learning.
 
 # Requirements
  - They are in their respective folders
