@@ -1,5 +1,5 @@
-# AdultClassifier
-This project Classifies if a prson is an Adult based on their Features using KNearestNeighbour Algorithm.
+# CancerClassifier
+This project Classifies if a person has Cancer based on their Features using SupportVectorClassifier Algorithm.
 
 # Requirements
  - Python 3.6 or up
@@ -7,17 +7,15 @@ This project Classifies if a prson is an Adult based on their Features using KNe
  - SciKitLearn
  
  # Instructions To Use
- - Make sure all files should be in the same folder before running.
- 
  - **Windows, Mac and Linux**
    ``` 
    pip install -r requirements.txt
    ```
  - **Windows**
    ```
-   python AdultClassifier.py
+   python CancerClassifier.py
    ```
  - **Mac or Linux**
    ```
-   python3 AdultClassifier.py
+   python3 CancerClassifier.py
    ```
