@@ -21,5 +21,5 @@ This project Determines a person's Salary based on their Features using SupportV
    ```
  - **Mac or Linux**
    ```
-   python3 AdultDeterminer.py
+   python3 SalaryDeterminer.py
    ```
