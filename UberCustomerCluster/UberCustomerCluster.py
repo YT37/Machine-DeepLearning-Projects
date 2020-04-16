@@ -3,9 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 
-dataset = pd.read_csv(
-    r"D:\Codes\MachineLearning\Projects\Clustering\UberCustomerCluster\Uber.csv"
-)
+dataset = pd.read_csv("UberCustomer.csv")
 
 X = dataset.iloc[:, [2, 3]].values
 

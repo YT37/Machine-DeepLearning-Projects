@@ -1,9 +1,7 @@
 import pandas as pd
 from apyori import apriori
 
-dataset = pd.read_csv(
-    r"D:\Codes\MachineLearning\Projects\AssociationRule\MarketBasketOptimisation.csv",
-    header=None)
+dataset = pd.read_csv("MarketBasket.csv", header=None)
 
 transactions = []
 

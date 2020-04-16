@@ -2,14 +2,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.cluster import KMeans
 
-dataset = pd.read_csv(
-    r"D:\Codes\MachineLearning\Projects\Clustering\MallCustomerCluster\MallCustomers.csv"
-)
+dataset = pd.read_csv("MallCustomers.csv")
 
 X = dataset.iloc[:, [3, 4]].values
 
 kmeans = KMeans(n_clusters=5,
-                init="k-means++",s
+                init="k-means++",
                 max_iter=300,
                 n_init=10,
                 random_state=0)

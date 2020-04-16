@@ -4,9 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 
-dataset = pd.read_csv(
-    r"D:\Codes\MachineLearning\Projects\Classification\AdultDeterminer\Adult.csv"
-)
+dataset = pd.read_csv("Adult.csv")
 
 X = dataset.iloc[:30000, [0, 2, 4, 10, 11, 12]].values
 y = dataset.iloc[:30000, -1].values

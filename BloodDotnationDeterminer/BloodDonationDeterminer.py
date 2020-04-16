@@ -4,9 +4,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.model_selection import train_test_split
 
-dataset = pd.read_csv(
-    r"D:\Codes\MachineLearning\Projects\Regression\BloodDotnationDeterminer\Blood.csv"
-)
+dataset = pd.read_csv("Blood.csv")
 
 X = dataset.iloc[:, :-1].values
 y = dataset.iloc[:, -1].values
