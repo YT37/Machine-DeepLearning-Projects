@@ -1,5 +1,5 @@
-# MachineLearning-Projects
- - These are Projects of different fields of Machine Learning.
+# Machine-DeepLearning-Projects
+ - These are Projects of different fields of Machine Learning & Deep Learning.
 
 # Requirements
  - They are in their respective folders

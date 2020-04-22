@@ -1,12 +1,12 @@
 # AccountsClassifier
-This project Classifies if a person will close his/her Bank account based on their Features using XGBoost Algorithm.
+This project Classifies if a person will close his/her Bank account based on their Features using ArtificialNeuralNetwork.
 
 # Requirements
  - Python 3.6 or up
  - Pandas
  - SciKitLearn
  - NumPy
- - XGBoost
+ - TensorFlow
  
  # Instructions To Use
  - Make sure all files should be in the same folder before running.
