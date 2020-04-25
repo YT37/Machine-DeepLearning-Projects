@@ -1,4 +1,4 @@
-# MoviesProcessing
+# MovieReviewsProcessing
 This project Process text based reviews of Movies and Classifies thier Sentiment them based on their Features using NaturalLanguageProcessing.
 
 # Requirements

@@ -1,4 +1,4 @@
-# ReviewsProcessing
+# RestaurantReviewsProcessing
 This project Process text based reviews and Classifies them based on their Features using NaturalLanguageProcessing.
 
 # Requirements

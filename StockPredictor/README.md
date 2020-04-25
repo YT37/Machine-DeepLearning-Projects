@@ -1,5 +1,5 @@
 # StockPredictor
-This project Recommends Movies to Users based on their Features using StackedAutoEncoder.
+This project Predicts future stock prices based on their Features using LSTM.
 
 # Requirements
  - Python 3.6 or up
