@@ -14,8 +14,8 @@ y = dataset.iloc[:, 13].values
 
 labelencoder = LabelEncoder()
 X[:, 2] = labelencoder.fit_transform(X[:, 2])
-ct = ColumnTransformer([('Country', OneHotEncoder(categories="auto"), [1])],
-                       remainder='passthrough')
+ct = ColumnTransformer([("Country", OneHotEncoder(categories="auto"), [1])],
+                       remainder="passthrough")
 X = np.array(ct.fit_transform(X))
 X = X[:, 1:]
 
@@ -30,10 +30,10 @@ Xtest = scX.transform(Xtest)
 
 classifier = Sequential()
 classifier.add(
-    Dense(6, input_dim=11, kernel_initializer='uniform', activation='relu'))
-classifier.add(Dense(6, kernel_initializer='uniform', activation='relu'))
+    Dense(6, input_dim=11, kernel_initializer="uniform", activation="relu"))
+classifier.add(Dense(6, kernel_initializer="uniform", activation="relu"))
 classifier.add(Dropout(rate=0.1))
-classifier.add(Dense(1, kernel_initializer='uniform', activation='sigmoid'))
+classifier.add(Dense(1, kernel_initializer="uniform", activation="sigmoid"))
 classifier.compile(optimizer="rmsprop",
                    loss="binary_crossentropy",
                    metrics=["accuracy"])
