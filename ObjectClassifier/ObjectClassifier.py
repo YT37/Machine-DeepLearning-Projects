@@ -36,7 +36,3 @@ model.compile(
     optimizer="rmsprop", loss="categorical_crossentropy", metrics=["accuracy"]
 )
 model.fit(Xtrain, yTrain, batch_size=32, epochs=10, shuffle=True)
-
-yPred = model.predict(Xtest)
-
-cm = confusion_matrix(yTest.argmax(1), yPred)
