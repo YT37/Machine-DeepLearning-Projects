@@ -1,4 +1,4 @@
-# ObjectsClassifier
+# ObjectClassifier
 
 This project Classifies a picture of an Objects based on their Features using ConvolutionalNeuralNetwork.
 
@@ -19,9 +19,9 @@ This project Classifies a picture of an Objects based on their Features using Co
   ```
 - **Windows**
   ```
-  python ObjectsClassifier.py
+  python ObjectClassifier.py
   ```
 - **Mac or Linux**
   ```
-  python3 ObjectsClassifier.py
+  python3 ObjectClassifier.py
   ```
