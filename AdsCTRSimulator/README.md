@@ -1,5 +1,5 @@
-# AdsCTRRenforcement
-This project renforces Ads CTR based on their Features using UpperConfidenceBound Algorithm.
+# AdsCTRRSimulator
+This project simulates Ads CTR based on their Features using UpperConfidenceBound Algorithm.
 
 # Requirements
  - Python 3.6 or up
@@ -15,9 +15,9 @@ This project renforces Ads CTR based on their Features using UpperConfidenceBoun
    ```
  - **Windows**
    ```
-   python AdsCTRRenforcement.py
+   python AdsCTRRSimulator.py
    ```
  - **Mac or Linux**
    ```
-   python3 AdsCTRRenforcement.py
+   python3 AdsCTRRSimulator.py
    ```

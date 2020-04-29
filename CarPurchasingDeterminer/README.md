@@ -1,4 +1,4 @@
-# CarPurchasinggDeterminer
+# CarPurchasingDeterminer
 This project Determines the Purchasing price of car of a customer based on their Features using ArtificialNeuralNetwork.
 
 # Requirements
@@ -18,9 +18,9 @@ This project Determines the Purchasing price of car of a customer based on their
   ```
 - **Windows**
   ```
-  python CarPurchasinggDeterminer.py
+  python CarPurchasingDeterminer.py
   ```
 - **Mac or Linux**
   ```
-  python3 CarPurchasinggDeterminer.py
+  python3 CarPurchasingDeterminer.py
   ```
