@@ -1,11 +1,10 @@
 # AnimalClassifier
 
-This project Classifies a picture of an Animal based on their Features using ConvolutionalNeuralNetwork.
+This project Classifies a picture of an Animal based on their Features using TransferLearning.
 
 # Requirements
 
 - Python 3.6 or up
-- NumPy
 - TensorFlow
 
 # Instructions To Use

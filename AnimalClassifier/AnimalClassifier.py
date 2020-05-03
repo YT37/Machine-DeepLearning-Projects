@@ -1,51 +1,41 @@
-import numpy as np
-from tensorflow.keras.layers import Convolution2D, Dense, Flatten, MaxPooling2D
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications import MobileNetV2
+from tensorflow.keras.layers import Dense, GlobalAveragePooling2D
+from tensorflow.keras.models import Model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-classifier = Sequential()
-classifier.add(
-    Convolution2D(64, (3, 3), input_shape=(128, 128, 3), activation="relu"))
-classifier.add(MaxPooling2D(pool_size=(2, 2)))
-classifier.add(Convolution2D(128, (3, 3), activation="relu"))
-classifier.add(MaxPooling2D(pool_size=(2, 2)))
-classifier.add(Flatten())
-classifier.add(Dense(128, activation="relu"))
-classifier.add(Dense(128, activation="relu"))
-classifier.add(Dense(1, activation="sigmoid"))
-classifier.compile(optimizer="adam",
-                   loss="binary_crossentropy",
-                   metrics=["accuracy"])
-
-trainData = ImageDataGenerator(rescale=1. / 255,
-                               shear_range=0.2,
-                               zoom_range=0.2,
-                               horizontal_flip=True)
-
-testData = ImageDataGenerator(rescale=1. / 255)
-
-trainSet = trainData.flow_from_directory(directory="train",
-                                         target_size=(128, 128),
-                                         batch_size=32,
-                                         class_mode='binary')
-
-testSet = testData.flow_from_directory(directory="test",
-                                       target_size=(128, 128),
-                                       batch_size=32,
-                                       class_mode='binary')
-
-classifier.fit(
-    trainSet,
-    epochs=10,
-    validation_data=testSet,
+trainingGen = ImageDataGenerator(
+    rescale=1.0 / 255.0, shear_range=0.2, zoom_range=0.2, horizontal_flip=True
+).flow_from_directory(
+    "Dataset/Training", target_size=(128, 128), batch_size=128, class_mode="binary"
 )
 
-# Single Prediction
-"""testImg = np.expand_dims(image.img_to_array(
-    image.load_img(
-        "",
-        target_size=(128, 128))),
-                         axis=0)
+validationGen = ImageDataGenerator(
+    rescale=1.0 / 255.0, shear_range=0.2, zoom_range=0.2, horizontal_flip=True
+).flow_from_directory(
+    "Dataset/Validation", target_size=(128, 128), batch_size=128, class_mode="binary"
+)
 
-result = classifier.predict(testImg)"""
+base = MobileNetV2(input_shape=(128, 128, 3), include_top=False, weights="imagenet")
+base.trainable = False
+
+model = Model(
+    inputs=base.input,
+    outputs=Dense(units=1, activation="sigmoid")(GlobalAveragePooling2D()(base.output)),
+)
+
+model.compile(optimizer="rmsprop", loss="binary_crossentropy", metrics=["accuracy"])
+
+model.fit(trainingGen, epochs=2, validation_data=validationGen)
+
+loss, accuracy = model.evaluate(validationGen)
+
+base.trainable = True
+
+for layer in base.layers[:100]:
+    layer.trainable = False
+
+model.compile(optimizer="rmsprop", loss="binary_crossentropy", metrics=["accuracy"])
+
+model.fit(trainingGen, epochs=2, validation_data=validationGen)
+
+loss, accuracy = model.evaluate(validationGen)
