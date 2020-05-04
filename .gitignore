@@ -2,6 +2,8 @@ videos
 models
 results
 Train.p
+.vscode
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

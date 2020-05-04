@@ -1,0 +1,4 @@
+tensorflow
+numpy
+pandas_datareader
+tqdm
