@@ -1,0 +1,8 @@
+pytorch==1.1.0
+torchvision==0.3.0
+ffmpeg
+imagio
+imageio-ffmpeg
+opencv
+opencv-python
+tqdm
