@@ -1,5 +1,5 @@
-# RestaurantReviewsProcessing
-This project Process text based reviews and Classifies them based on their Features using NaturalLanguageProcessing.
+# MovieSentimentProcessing
+This project Process text based reviews of Movies and Classifies thier Sentiment them based on their Features using NaturalLanguageProcessing.
 
 # Requirements
  - Python 3.6 or up
@@ -16,9 +16,9 @@ This project Process text based reviews and Classifies them based on their Featu
    ```
  - **Windows**
    ```
-   python ReviewsProcessing.py
+   python MovieSentimentProcessing.py
    ```
  - **Mac or Linux**
    ```
-   python3 ReviewsProcessing.py
+   python3 MovieSentimentProcessing.py
    ```

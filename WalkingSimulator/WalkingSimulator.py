@@ -8,6 +8,7 @@ import torch
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
+
 class Replay(object):
     def __init__(self, size=1e6):
         self.memory = []

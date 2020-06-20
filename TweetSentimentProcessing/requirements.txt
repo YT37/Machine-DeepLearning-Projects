@@ -1,0 +1,8 @@
+bert-for-tf2
+sentencepiece
+numpy
+pandas
+tensorflow
+tensorflow-hub
+beautifulsoup4
+tqdm

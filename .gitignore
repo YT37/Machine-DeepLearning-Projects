@@ -3,6 +3,7 @@ models
 results
 Train.p
 .vscode
+Tweets.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
