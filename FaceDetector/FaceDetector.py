@@ -7,7 +7,7 @@ from cv2 import (
     imshow,
     rectangle,
     waitKey,
-)
+)~
 
 face = CascadeClassifier("Face.xml")
 eye = CascadeClassifier("Eye.xml")

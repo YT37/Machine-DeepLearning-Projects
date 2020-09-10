@@ -9,10 +9,8 @@ dataset = pd.read_csv("Adult.csv")
 X = dataset.iloc[:30000, [0, 2, 4, 10, 11, 12]].values
 y = dataset.iloc[:30000, -1].values
 
-Xtrain, Xtest, yTrain, yTest = train_test_split(X,
-                                                y,
-                                                test_size=0.15,
-                                                random_state=0)
+
+Xtrain, Xtest, yTrain, yTest = train_test_split(X, y, test_size=0.15, random_state=0)
 
 scX = StandardScaler()
 Xtrain = scX.fit_transform(Xtrain)
@@ -25,7 +23,8 @@ yPred = classifier.predict(Xtest)
 
 cm = confusion_matrix(yTest, yPred)
 
+
 accuracy = accuracy_score(yTest, yPred)
-precision = int((cm[1][1] / (cm[1][1] + cm[0][1])) * 10**3) / 10**3
-recall = int((cm[1][1] / (cm[1][1] + cm[1][0])) * 10**3) / 10**3
-f1Score = int((2 * precision * recall / (precision + recall)) * 10**3) / 10**3
+precision = int((cm[1][1] / (cm[1][1] + cm[0][1])) * 10 ** 3) / 10 ** 3
+recall = int((cm[1][1] / (cm[1][1] + cm[1][0])) * 10 ** 3) / 10 ** 3
+f1Score = int((2 * precision * recall / (precision + recall)) * 10 ** 3) / 10 ** 3
